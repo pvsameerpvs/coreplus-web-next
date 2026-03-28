@@ -12,8 +12,8 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 export const STATS: StatItem[] = [
-  { value: 800, label: 'Satisfied', sublabel: 'Customers', icon: 'bi-emoji-smile-fill', iconColor: 'text-yellow-400' },
-  { value: 1000, label: 'Visas', sublabel: 'Processed', icon: 'bi-file-earmark-check-fill', iconColor: 'text-cyan-400' },
+  { value: 800, label: 'Satisfied', sublabel: 'Clients', icon: 'bi-emoji-smile-fill', iconColor: 'text-yellow-400' },
+  { value: 1000, label: 'Visa Applications', sublabel: 'Assisted', icon: 'bi-file-earmark-check-fill', iconColor: 'text-cyan-400' },
   { value: 100, label: 'Partner', sublabel: 'Companies', icon: 'bi-building-fill', iconColor: 'text-green-400' },
 ];
 

@@ -25,7 +25,7 @@ export default function HeroSection() {
         className="absolute top-0 right-0 h-full z-0"
         style={{
           width: '50%',
-          backgroundImage: "url('/images/hero_bg_1.png')",
+          backgroundImage: "url('/images/visa_processing 12.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -45,7 +45,7 @@ export default function HeroSection() {
                 color: '#FFFFFF',
               }}
             >
-              Established &mdash; Trusted &mdash; UAE
+              Trusted Visa Guidance Across The UAE
             </div>
 
             <h1
@@ -56,12 +56,13 @@ export default function HeroSection() {
                 color: '#FFFFFF',
               }}
             >
-              Launch Your Business with <br />
-              <span style={{ color: '#FFFFFF' }}>Confidence</span> in the UAE
+              Best Visa Consultant <br />
+              <span style={{ color: '#FFFFFF' }}>in Dubai</span>
             </h1>
 
             <p className="text-lg text-white/90 mb-10 max-w-xl leading-relaxed">
-              From company formation to government approvals — we make business setup simple, compliant, and stress-free.
+              Core Plus helps UAE residents apply for international visit visas with expert guidance, accurate
+              documentation support, and a smooth application process.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -69,13 +70,13 @@ export default function HeroSection() {
                 href="/contact"
                 className="inline-block px-10 py-4 rounded-full font-bold text-primary bg-white shadow-xl hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
               >
-                GET STARTED
+                Get a Free Consultation
               </Link>
               <Link
-                href="/services"
+                href="/visa-requirements/international"
                 className="inline-block px-8 py-4 rounded-full font-bold text-white border border-white hover:bg-white hover:-translate-y-1 transition-all duration-300"
               >
-                OUR SERVICES
+                Explore Visa Services
               </Link>
             </div>
           </div>

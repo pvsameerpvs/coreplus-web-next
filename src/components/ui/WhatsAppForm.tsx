@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { WA_NUMBER } from '@/lib/constants';
+import { WHATSAPP_INQUIRY_OPTIONS } from '@/lib/home-content';
 
 export default function WhatsAppForm() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', subject: '', message: '' });
@@ -18,15 +19,16 @@ export default function WhatsAppForm() {
     return `https://wa.me/${WA_NUMBER}?text=${text}`;
   }, [form]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const fields: { name: keyof typeof form; label: string; type: string; span?: boolean }[] = [
+  const fields: { name: 'name' | 'email' | 'phone'; label: string; type: string; span?: boolean }[] = [
     { name: 'name', label: 'Your Name', type: 'text' },
     { name: 'email', label: 'Your Email', type: 'email' },
     { name: 'phone', label: 'Phone Number', type: 'tel', span: true },
-    { name: 'subject', label: 'Subject', type: 'text', span: true },
   ];
 
   return (
@@ -57,6 +59,22 @@ export default function WhatsAppForm() {
             />
           </div>
         ))}
+        <div className="col-span-2">
+          <select
+            name="subject"
+            id="subject"
+            value={form.subject}
+            onChange={handleChange}
+            className="w-full px-4 py-3 bg-gray-100 border-0 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all text-gray-700"
+          >
+            <option value="">Select enquiry type</option>
+            {WHATSAPP_INQUIRY_OPTIONS.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="col-span-2">
           <textarea
             name="message"

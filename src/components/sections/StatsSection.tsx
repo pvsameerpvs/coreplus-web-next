@@ -35,17 +35,15 @@ export default function StatsSection() {
 
           {/* Left text */}
           <div className="lg:col-span-2" data-aos="fade-right">
-            <span className="font-bold uppercase text-sm" style={{ color: '#DAC0A3', letterSpacing: '2px' }}>
-              CorePlus Impact
+            <span className="font-bold uppercase text-sm" style={{ color: 'rgba(255,255,255,0.7)', letterSpacing: '2px' }}>
+              Core Plus Impact
             </span>
-            <h2 className="text-4xl font-bold mt-3 mb-5" style={{ color: '#DAC0A3' }}>
-              Driving Success Through Numbers
+            <h2 className="text-4xl font-bold mt-3 mb-5 text-white">
+              Supporting UAE Residents with Reliable Visa Consultancy Services
             </h2>
             <p className="text-lg leading-relaxed mb-3" style={{ color: 'rgba(255,255,255,0.85)' }}>
-              With years of experience across the UAE, CorePlus has earned the trust of hundreds of clients through transparent processes and expert guidance.
-            </p>
-            <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-              Every number reflects our dedication to excellence. From helping over a thousand clients secure their visas to building strong partnerships, our commitment drives every success story.
+              With years of experience assisting travellers across the UAE, Core Plus has helped hundreds of clients
+              successfully prepare their visa applications for international travel.
             </p>
           </div>
 
