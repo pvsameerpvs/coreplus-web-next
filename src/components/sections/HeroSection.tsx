@@ -42,7 +42,7 @@ export default function HeroSection() {
                 background: 'rgba(255,255,255,0.1)',
                 backdropFilter: 'blur(10px)',
                 border: '1px solid rgba(255,255,255,0.2)',
-                color: '#DAC0A3',
+                color: '#FFFFFF',
               }}
             >
               Established &mdash; Trusted &mdash; UAE
@@ -50,10 +50,14 @@ export default function HeroSection() {
 
             <h1
               className="font-extrabold leading-tight mb-6 text-white"
-              style={{ fontSize: 'clamp(2rem, 5vw, 4rem)', textShadow: '0 10px 30px rgba(0,0,0,0.2)' }}
+              style={{
+                fontSize: 'clamp(2rem, 5vw, 4rem)',
+                textShadow: '0 10px 30px rgba(0,0,0,0.2)',
+                color: '#FFFFFF',
+              }}
             >
               Launch Your Business with <br />
-              <span style={{ color: '#4facfe' }}>Confidence</span> in the UAE
+              <span style={{ color: '#FFFFFF' }}>Confidence</span> in the UAE
             </h1>
 
             <p className="text-lg text-white/90 mb-10 max-w-xl leading-relaxed">

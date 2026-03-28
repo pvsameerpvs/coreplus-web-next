@@ -4,9 +4,10 @@ export const WA_NUMBER = '971504145594';
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
+  { label: 'About us', href: '/about' },
   { label: 'Services', href: '/services' },
-  { label: 'Visas', href: '/visa-requirements' },
+  { label: 'UAE Visas', href: '/visa-requirements/uae' },
+  { label: 'International Visas', href: '/visa-requirements/international' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -178,6 +179,16 @@ export const VISA_DATA: VisaEntry[] = [
     ],
     notes: 'Price: AED 1,050 (Including Visa Fees)',
     processingTime: '2–3 weeks (Renewal)',
+  },
+  {
+    id: 'saudi',
+    title: 'Saudi Visa',
+    image: '/images/visa2.jpg',
+    price: 'Contact for Pricing',
+    category: 'international',
+    flag: 'sa',
+    requirements: ['Valid passport', 'UAE residence visa copy', 'Passport-size photograph', 'Basic travel details'],
+    processingTime: '24-72 hours',
   },
   {
     id: 'canada',

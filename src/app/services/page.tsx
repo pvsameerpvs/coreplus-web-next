@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Image from 'next/image';
 import { SERVICES } from '@/lib/constants';
 
@@ -26,8 +27,9 @@ export default function ServicesPage() {
           <h2 className="text-4xl font-bold mb-12 text-primary">Our Services</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {SERVICES.map((svc) => (
-              <div
+              <Link
                 key={svc.id}
+                href={`/services/${svc.id}`}
                 className="relative rounded-2xl overflow-hidden shadow-lg text-white flex flex-col"
                 style={{ minHeight: '380px', background: '#1a1a1a' }}
               >
@@ -47,8 +49,12 @@ export default function ServicesPage() {
                   <i className={`bi ${svc.icon} text-5xl ${svc.iconColor} mb-4 block`} />
                   <h5 className="font-bold text-lg mb-3" style={{ color: '#DAC0A3' }}>{svc.title}</h5>
                   <p className="text-sm text-white/85 leading-relaxed">{svc.description}</p>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white">
+                    Explore Service
+                    <i className="bi bi-arrow-right" />
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
