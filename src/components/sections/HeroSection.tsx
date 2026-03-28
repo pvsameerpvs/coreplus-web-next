@@ -1,0 +1,83 @@
+import Link from 'next/link';
+
+export default function HeroSection() {
+  return (
+    <section
+      className="relative flex items-center overflow-hidden bg-white"
+      style={{
+        height: '100vh',
+        minHeight: '750px',
+        paddingTop: '80px',
+      }}
+    >
+      {/* Angled blue background left */}
+      <div
+        className="hero-bg-clip absolute top-0 left-0 h-full z-10"
+        style={{
+          width: '65%',
+          background: 'linear-gradient(135deg, #0F2C59 0%, #1a4f9c 100%)',
+          filter: 'drop-shadow(10px 0 15px rgba(0,0,0,0.3))',
+        }}
+      />
+
+      {/* Right background image */}
+      <div
+        className="absolute top-0 right-0 h-full z-0"
+        style={{
+          width: '50%',
+          backgroundImage: "url('/images/hero_bg_1.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
+
+      {/* Content */}
+      <div className="relative z-20 w-full max-w-[1200px] mx-auto px-4">
+        <div className="flex items-center" style={{ minHeight: '100%' }}>
+          <div className="w-full lg:w-7/12 pr-8 text-white" data-aos="fade-right">
+            {/* Badge */}
+            <div
+              className="inline-block mb-8 px-5 py-2 rounded-full text-sm font-semibold uppercase tracking-widest"
+              style={{
+                background: 'rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255,255,255,0.2)',
+                color: '#DAC0A3',
+              }}
+            >
+              Established &mdash; Trusted &mdash; UAE
+            </div>
+
+            <h1
+              className="font-extrabold leading-tight mb-6 text-white"
+              style={{ fontSize: 'clamp(2rem, 5vw, 4rem)', textShadow: '0 10px 30px rgba(0,0,0,0.2)' }}
+            >
+              Launch Your Business with <br />
+              <span style={{ color: '#4facfe' }}>Confidence</span> in the UAE
+            </h1>
+
+            <p className="text-lg text-white/90 mb-10 max-w-xl leading-relaxed">
+              From company formation to government approvals — we make business setup simple, compliant, and stress-free.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="inline-block px-10 py-4 rounded-full font-bold text-primary bg-white shadow-xl hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
+              >
+                GET STARTED
+              </Link>
+              <Link
+                href="/services"
+                className="inline-block px-8 py-4 rounded-full font-bold text-white border border-white hover:bg-white hover:-translate-y-1 transition-all duration-300"
+              >
+                OUR SERVICES
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  );
+}
