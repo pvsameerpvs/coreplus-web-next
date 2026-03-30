@@ -138,7 +138,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'schengen',
     title: 'Schengen Visa',
-    image: '/images/img 3.png',
+    image: '/images/shengan-visa-from-dubai.jpg',
     price: 'From AED 500 (Service)',
     category: 'international',
     requirements: ['Passport (scan), UAE Visa & ID (3+ months)', 'Photo (white bg), Bank Statement (3 months)', 'Hotel & Flight booking', 'Travel Insurance', 'NOC Letter'],
@@ -147,7 +147,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'uk',
     title: 'UK Visa',
-    image: '/images/img 3.png',
+    image: '/images/uk-visa-from-dubai.jpg',
     price: 'From AED 1,100',
     category: 'international',
     flag: 'gb',
@@ -163,7 +163,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'usa',
     title: 'USA Visa',
-    image: '/images/img 3.png',
+    image: '/images/usa-visa-from-dubai.jpg',
     price: 'AED 1,050',
     category: 'international',
     flag: 'us',
@@ -183,7 +183,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'saudi',
     title: 'Saudi Visa',
-    image: '/images/visa2.jpg',
+    image: '/images/soudi-visa-from-dubai.jpg',
     price: 'Contact for Pricing',
     category: 'international',
     flag: 'sa',
@@ -257,7 +257,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'japan',
     title: 'Japan Visa',
-    image: '/images/img 3.png',
+    image: '/images/japan-visa-from-dubai.jpg',
     price: 'AED 600',
     category: 'international',
     flag: 'jp',
