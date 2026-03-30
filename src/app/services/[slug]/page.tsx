@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import InternationalVisaDetailPage from '@/components/pages/InternationalVisaDetailPage';
 import { getServiceDetailPage, getServiceDetailSlugs } from '@/lib/service-detail-pages';
+import { buildMetadata } from '@/lib/seo';
 
 interface ServiceDetailRouteProps {
   params: Promise<{
@@ -23,10 +24,12 @@ export async function generateMetadata({ params }: ServiceDetailRouteProps): Pro
     return {};
   }
 
-  return {
+  return buildMetadata({
     title: service.page.metaTitle,
     description: service.page.metaDescription,
-  };
+    path: `/services/${slug}`,
+    image: service.page.heroImage,
+  });
 }
 
 export default async function ServiceDetailRoute({ params }: ServiceDetailRouteProps) {

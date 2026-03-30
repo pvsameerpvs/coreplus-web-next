@@ -2,8 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { SERVICES } from '@/lib/constants';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = { title: 'Services - CorePlus' };
+export const metadata: Metadata = buildMetadata({
+  title: 'Services - CorePlus',
+  description:
+    'Explore Core Plus services in the UAE including PRO services, visa processing, company formation, licensing, and global visa assistance.',
+  path: '/services',
+  image: '/images/business set up.jpg',
+});
 
 const PRO_ITEMS = [
   'Trade License Application & Renewal',

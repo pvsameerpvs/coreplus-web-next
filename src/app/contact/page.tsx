@@ -1,7 +1,14 @@
 import type { Metadata } from 'next';
 import WhatsAppForm from '@/components/ui/WhatsAppForm';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = { title: 'Contact - CorePlus' };
+export const metadata: Metadata = buildMetadata({
+  title: 'Contact - CorePlus',
+  description:
+    'Contact Core Plus in Al Karama, Dubai for visa processing, PRO services, company formation, and business support in the UAE.',
+  path: '/contact',
+  image: '/images/logo-core.png',
+});
 
 const CONTACT_DETAILS = [
   { icon: 'bi-geo-alt-fill', text: 'Matar Karama Building - Shop No 1 - behind Ansar Gallery - Al Karama - Dubai, UAE' },

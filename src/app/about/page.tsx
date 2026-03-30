@@ -1,8 +1,15 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { GOOGLE_BUSINESS_PROFILE_URL } from '@/lib/home-content';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = { title: 'About Us - CorePlus' };
+export const metadata: Metadata = buildMetadata({
+  title: 'About Us - CorePlus',
+  description:
+    'Learn more about Core Plus Business Set Up Services LLC, our mission, values, company snapshot, and business support services in Dubai.',
+  path: '/about',
+  image: '/images/img 33.png',
+});
 
 type PresenceItem = {
   title: string;

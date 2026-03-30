@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import InternationalVisaDetailPage from '@/components/pages/InternationalVisaDetailPage';
 import { getVisaDetailPage, getVisaDetailParams } from '@/lib/visa-detail-pages';
+import { buildMetadata } from '@/lib/seo';
 
 interface VisaDetailRouteProps {
   params: Promise<{
@@ -24,10 +25,12 @@ export async function generateMetadata({ params }: VisaDetailRouteProps): Promis
     return {};
   }
 
-  return {
+  return buildMetadata({
     title: page.metaTitle,
     description: page.metaDescription,
-  };
+    path: `/visa-requirements/${category}/${slug}`,
+    image: page.heroImage,
+  });
 }
 
 export default async function VisaDetailRoute({ params }: VisaDetailRouteProps) {
