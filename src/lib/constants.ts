@@ -193,7 +193,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'canada',
     title: 'Canada Visa',
-    image: '/images/img 3.png',
+    image: '/images/canada-visa.jpg',
     price: 'Contact for Pricing',
     category: 'international',
     flag: 'ca',
@@ -203,7 +203,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'australia',
     title: 'Australia Visa',
-    image: '/images/img 3.png',
+    image: '/images/australia-visa.jpg',
     price: 'Contact for Pricing',
     category: 'international',
     flag: 'au',
@@ -213,7 +213,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'new-zealand',
     title: 'New Zealand Visa',
-    image: '/images/img 3.png',
+    image: '/images/newzland-visa.jpg',
     price: 'Contact for Pricing',
     category: 'international',
     flag: 'nz',
@@ -223,7 +223,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'ireland',
     title: 'Ireland Visa',
-    image: '/images/img 3.png',
+    image: '/images/ireland-visa.jpg',
     price: 'Contact for Pricing',
     category: 'international',
     flag: 'ie',
@@ -233,7 +233,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'thailand',
     title: 'Thailand E-Visa',
-    image: '/images/img 3.png',
+    image: '/images/thailand-e-visa.jpg',
     price: 'AED 630',
     category: 'international',
     flag: 'th',
@@ -243,7 +243,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'turkey',
     title: 'Turkey Visa',
-    image: '/images/img 3.png',
+    image: '/images/turkey-visa.jpg',
     price: 'AED 449 (Service) + Visa Fee',
     category: 'international',
     flag: 'tr',
@@ -267,7 +267,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'korea',
     title: 'South Korea Visa',
-    image: '/images/img 3.png',
+    image: '/images/south-koria-visa.jpg',
     price: 'AED 630',
     category: 'international',
     flag: 'kr',
@@ -277,7 +277,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'malaysia',
     title: 'Malaysia Visa',
-    image: '/images/img 3.png',
+    image: '/images/malesia-visa.jpg',
     price: 'AED 600',
     category: 'international',
     flag: 'my',
@@ -287,7 +287,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'singapore',
     title: 'Singapore Visa',
-    image: '/images/img 3.png',
+    image: '/images/singepore-visa.jpg',
     price: 'AED 600',
     category: 'international',
     flag: 'sg',
@@ -297,7 +297,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'china',
     title: 'China Visa',
-    image: '/images/img 3.png',
+    image: '/images/china-visa.jpg',
     price: 'AED 600',
     category: 'international',
     flag: 'cn',
@@ -307,7 +307,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'brazil',
     title: 'Brazil Visa',
-    image: '/images/img 3.png',
+    image: '/images/brazil-visa.jpg',
     price: 'Contact for Pricing',
     category: 'international',
     flag: 'br',
