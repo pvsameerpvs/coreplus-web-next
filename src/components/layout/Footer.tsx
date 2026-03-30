@@ -13,9 +13,8 @@ export default function Footer() {
               src="/images/logo-core-footer.png"
               alt="Core Plus Logo"
               width={200}
-              height={60}
+              height={50}
               className="mb-4"
-              style={{ maxWidth: '200px', height: 'auto' }}
             />
             <p className="text-white/70 text-sm leading-relaxed">
               Your trusted partner for Business Setup, PRO Services, Visa Processing,

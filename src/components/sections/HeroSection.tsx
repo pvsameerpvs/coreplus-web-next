@@ -25,7 +25,7 @@ export default function HeroSection() {
         className="absolute top-0 right-0 h-full z-0"
         style={{
           width: '50%',
-          backgroundImage: "url('/images/visa_processing 12.jpg')",
+          backgroundImage: "url('/images/hero-section.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

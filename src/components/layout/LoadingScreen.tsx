@@ -25,7 +25,7 @@ export default function LoadingScreen() {
         src="/images/logo-core-footer.png"
         alt="Loading..."
         width={150}
-        height={80}
+        height={37}
         className="loader-logo"
         priority
       />

@@ -29,9 +29,9 @@ export default function Navbar() {
             <Image
               src="/images/logo-core.png"
               alt="Core Plus Logo"
-              width={160}
+              width={244}
               height={60}
-              style={{ height: '60px', width: 'auto', borderRadius: '10px' }}
+              style={{ borderRadius: '10px' }}
               priority
             />
           </Link>
@@ -86,7 +86,7 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between px-5 py-4 border-b border-white/20">
           <div className="flex items-center gap-3">
-            <Image src="/images/logo-core.png" alt="Core Plus Logo" width={40} height={40} style={{ borderRadius: '5px' }} />
+            <Image src="/images/logo-core.png" alt="Core Plus Logo" width={120} height={29} style={{ borderRadius: '5px' }} />
             <span className="text-white font-bold">CORE PLUS</span>
           </div>
           <button onClick={() => setMobileOpen(false)} className="text-white/80 hover:text-white" aria-label="Close menu">

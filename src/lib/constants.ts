@@ -27,9 +27,9 @@ export const TESTIMONIALS: TestimonialItem[] = [
 ];
 
 export const SERVICES: ServiceItem[] = [
-  { id: 'pro', title: 'PRO Services', description: 'Professional handling of government-related documentation, approvals, and legal processes on behalf of companies or individuals in the UAE.', image: '/images/PRO.jpg', icon: 'bi-briefcase-fill', iconColor: 'text-yellow-400' },
+  { id: 'pro', title: 'PRO Services', description: 'Professional handling of government-related documentation, approvals, and legal processes on behalf of companies or individuals in the UAE.', image: '/images/pro image.png', icon: 'bi-briefcase-fill', iconColor: 'text-yellow-400' },
   { id: 'visa', title: 'Visa Processing', description: 'We assist in all types of UAE visa applications including: Golden Visa, Employment Visa, Residence Visa, Freelance Visa, Family Visa, and Investor Visa.', image: '/images/visa_processing 12.jpg', icon: 'bi-passport-fill', iconColor: 'text-cyan-400' },
-  { id: 'company', title: 'Company Formation & Licensing', description: 'From trade license application and renewal to notarization, attestation, and establishment card services, we handle every step of your business setup.', image: '/images/img 2.png', icon: 'bi-building-fill-check', iconColor: 'text-green-400' },
+  { id: 'company', title: 'Company Formation & Licensing', description: 'From trade license application and renewal to notarization, attestation, and establishment card services, we handle every step of your business setup.', image: '/images/business set up.jpg', icon: 'bi-building-fill-check', iconColor: 'text-green-400' },
   { id: 'global-visa', title: 'Global Visa Assistance', description: 'We provide international visa support for major destinations including Schengen countries, USA, UK, Canada, Australia, New Zealand, and more.', image: '/images/visa2.jpg', icon: 'bi-globe2', iconColor: 'text-white' },
 ];
 
