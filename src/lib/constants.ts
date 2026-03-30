@@ -40,7 +40,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'family',
     title: 'Family Visa',
-    image: '/images/img 1.png',
+    image: '/images/family-visa.jpg',
     price: 'Contact for Pricing',
     category: 'uae',
     subcategories: [
@@ -65,7 +65,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'golden',
     title: 'Golden Visa',
-    image: '/images/GD.jpg',
+    image: '/images/golden-visa.jpg',
     price: 'Contact for Pricing',
     category: 'uae',
     subcategories: [
@@ -86,7 +86,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'employment',
     title: 'Employment Visa',
-    image: '/images/img 3.png',
+    image: '/images/employment-visa.jpg',
     price: 'Contact for Pricing',
     category: 'uae',
     requirements: ['Original Passport', 'Passport-size Photo', 'Educational Certificates', 'Offer Letter / Employment Contract', 'Medical Fitness Certificate', 'Emirates ID (for renewal)'],
@@ -94,7 +94,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'freelance',
     title: 'Freelance Visa',
-    image: '/images/img 12.png',
+    image: '/images/freelance-visa.jpg',
     price: 'Contact for Pricing',
     category: 'uae',
     requirements: ['Passport copy & Photo', 'Portfolio or proof of freelance work', 'Bank statements', 'Free zone registration documents'],
@@ -102,7 +102,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'investor',
     title: 'Investor Visa',
-    image: '/images/img 22.png',
+    image: '/images/investor-visa.jpg',
     price: 'Contact for Pricing',
     category: 'uae',
     requirements: ['Passport copy & Photo', 'Trade License copy', 'Memorandum of Association', 'Bank statements (6 months)', 'Business plan (for new companies)'],
@@ -110,7 +110,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'tourist-30',
     title: 'Tourist Visa (30 Days)',
-    image: '/images/img 1.png',
+    image: '/images/tourinst-visa-30-days.jpg',
     price: 'AED 350',
     category: 'uae',
     requirements: ['Passport scan (6+ months validity)', 'Photo (white background)', 'Return flight ticket', 'Hotel booking or sponsor letter'],
@@ -119,7 +119,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'tourist-60',
     title: 'Tourist Visa (60 Days)',
-    image: '/images/img 1.png',
+    image: '/images/tourinst-visa-60-days.jpg',
     price: 'AED 700',
     category: 'uae',
     requirements: ['Passport scan (6+ months validity)', 'Photo (white background)', 'Return flight ticket', 'Hotel booking or sponsor letter'],
@@ -128,7 +128,7 @@ export const VISA_DATA: VisaEntry[] = [
   {
     id: 'transit',
     title: 'Transit Visa',
-    image: '/images/img 1.png',
+    image: '/images/transit-visa.jpg',
     price: 'AED 170',
     category: 'uae',
     requirements: ['Passport scan', 'Onward flight booking', 'Photo'],
