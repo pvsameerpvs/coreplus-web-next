@@ -207,7 +207,7 @@ export default function AboutPage() {
             </div>
             <div>
               <Image
-                src="/images/img 33.png"
+                src="/images/company-formation.jpg"
                 alt="CorePlus Team"
                 width={600}
                 height={450}
