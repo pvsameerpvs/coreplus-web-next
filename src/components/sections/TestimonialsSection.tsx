@@ -1,13 +1,14 @@
-import Link from 'next/link';
 import WhatsAppForm from '@/components/ui/WhatsAppForm';
 import { TESTIMONIALS, WA_NUMBER } from '@/lib/constants';
 import {
   GOOGLE_BUSINESS_EMBED_URL,
-  GOOGLE_BUSINESS_PROFILE_URL,
   HOME_TRUST_SIGNALS,
 } from '@/lib/home-content';
 
 export default function TestimonialsSection() {
+  const featuredTestimonials = TESTIMONIALS.slice(0, 3);
+  const scrollingTestimonials = [...featuredTestimonials, ...featuredTestimonials];
+
   return (
     <section className="bg-gray-50 py-20">
       <div className="container mx-auto px-4">
@@ -18,7 +19,36 @@ export default function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="mb-12 grid gap-8 xl:grid-cols-[1.2fr_0.8fr]">
+        <div className="mb-12 grid gap-8">
+          <div className="relative overflow-hidden rounded-[2rem]" data-aos="fade-left">
+            <div className="testimonial-marquee-track gap-6 py-1">
+              {scrollingTestimonials.map((testimonial, index) => (
+                <article
+                  key={`${testimonial.initials}-${testimonial.role}-${index}`}
+                  className="testimonial-marquee-card w-[min(22rem,78vw)] flex-shrink-0 rounded-[2rem] border border-black/5 bg-white p-6 shadow-[0_18px_45px_rgba(15,44,89,0.08)]"
+                >
+                  <div className="mb-4 flex items-center gap-1 text-amber-400">
+                    {Array.from({ length: 5 }).map((_, starIndex) => (
+                      <i key={`${testimonial.initials}-star-${starIndex}-${index}`} className="bi bi-star-fill" />
+                    ))}
+                  </div>
+                  <p className="text-base italic leading-7 text-gray-500">&ldquo;{testimonial.quote}&rdquo;</p>
+                  <div className="mt-5 flex items-center gap-3">
+                    <div
+                      className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full font-bold text-white ${testimonial.avatarColor}`}
+                    >
+                      {testimonial.initials}
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-primary">{testimonial.name}</h4>
+                      <p className="text-sm text-gray-400">{testimonial.role}</p>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+
           <div
             className="overflow-hidden rounded-[2rem] border border-black/5 bg-white shadow-[0_24px_60px_rgba(15,44,89,0.08)]"
             data-aos="fade-right"
@@ -32,23 +62,6 @@ export default function TestimonialsSection() {
                 View our Google Business profile, location details, and customer feedback directly from our official
                 listing.
               </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <a
-                  href={GOOGLE_BUSINESS_PROFILE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-full px-6 py-3 font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                  style={{ background: '#0F2C59' }}
-                >
-                  Open Google Reviews
-                </a>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center rounded-full border border-primary/15 px-6 py-3 font-bold text-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                >
-                  Visit Our Office
-                </Link>
-              </div>
             </div>
 
             <div className="p-4 pt-0 md:p-8 md:pt-0">
@@ -62,35 +75,6 @@ export default function TestimonialsSection() {
                 title="Core Plus Google Business Profile"
               />
             </div>
-          </div>
-
-          <div className="grid gap-6" data-aos="fade-left">
-            {TESTIMONIALS.slice(0, 3).map((testimonial, index) => (
-              <div
-                key={`${testimonial.initials}-${testimonial.role}`}
-                className="rounded-[2rem] border border-black/5 bg-white p-6 shadow-[0_18px_45px_rgba(15,44,89,0.08)]"
-                data-aos="fade-up"
-                data-aos-delay={String(120 + index * 80)}
-              >
-                <div className="mb-4 flex items-center gap-1 text-amber-400">
-                  {Array.from({ length: 5 }).map((_, starIndex) => (
-                    <i key={`${testimonial.initials}-star-${starIndex}`} className="bi bi-star-fill" />
-                  ))}
-                </div>
-                <p className="text-base italic leading-7 text-gray-500">&ldquo;{testimonial.quote}&rdquo;</p>
-                <div className="mt-5 flex items-center gap-3">
-                  <div
-                    className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full font-bold text-white ${testimonial.avatarColor}`}
-                  >
-                    {testimonial.initials}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-primary">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-400">{testimonial.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 

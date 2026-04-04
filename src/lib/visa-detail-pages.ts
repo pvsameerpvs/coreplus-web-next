@@ -81,6 +81,7 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
           'Yes. UAE residents require a visa to travel to the United Kingdom regardless of nationality. The most common visa type applied for by UAE residents is the UK Standard Visitor Visa, which allows travellers to visit the UK for tourism, short business visits, or family visits.',
           'This visa typically allows a stay of up to 6 months per visit. Long-term multiple-entry visas are also available for 2 years, 5 years, or 10 years, while each stay is still limited to six months.',
         ],
+        
       },
       {
         title: 'Key Facts - UK Visa for UAE Residents',

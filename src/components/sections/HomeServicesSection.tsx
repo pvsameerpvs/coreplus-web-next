@@ -63,13 +63,13 @@ export default function HomeServicesSection() {
         </div>
 
         <div className="mt-10 text-center" data-aos="fade-up" data-aos-delay="180">
-          <a
-            href="https://coreplusdxb.ae/services.html"
+          <Link
+            href="/services"
             className="inline-flex items-center justify-center rounded-full px-10 py-4 font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             style={{ background: '#0F2C59' }}
           >
             View All Services
-          </a>
+          </Link>
         </div>
       </div>
     </section>

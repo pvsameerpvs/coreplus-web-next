@@ -72,12 +72,7 @@ export default function HeroSection() {
               >
                 Get a Free Consultation
               </Link>
-              <Link
-                href="/visa-requirements/international"
-                className="inline-block px-8 py-4 rounded-full font-bold text-white border border-white hover:bg-white hover:-translate-y-1 transition-all duration-300"
-              >
-                Explore Visa Services
-              </Link>
+
             </div>
           </div>
         </div>

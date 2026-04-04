@@ -153,3 +153,33 @@ body.loaded #loader-container {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Testimonial marquee */
+.testimonial-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: testimonialMarquee 26s linear infinite;
+}
+
+.testimonial-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.testimonial-marquee-card {
+  min-height: 100%;
+}
+
+@keyframes testimonialMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-marquee-track {
+    animation: none;
+  }
+}

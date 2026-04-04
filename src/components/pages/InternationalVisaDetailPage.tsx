@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import WhatsAppForm from '@/components/ui/WhatsAppForm';
 import type { VisaDetailPage, VisaDetailSection } from '@/lib/visa-detail-pages';
 
 interface InternationalVisaDetailPageProps {
@@ -29,22 +30,22 @@ function VisaSection({ section, index }: { section: VisaDetailSection; index: nu
   const sectionId = getSectionId(section.title);
 
   return (
-    <section id={sectionId} className={`scroll-mt-32 py-14 md:py-16 ${sectionBackground}`}>
+    <section id={sectionId} className={`scroll-mt-32 ${sectionBackground}`}>
       <div className="rounded-[2rem] border border-black/5 bg-white/85 p-6 shadow-[0_24px_80px_rgba(15,44,89,0.06)] backdrop-blur-sm md:p-10">
         <div className="mb-8 flex flex-col gap-4 border-b border-black/5 pb-8 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.35em] text-secondary">
+            {/* <p className="mb-3 text-xs font-bold uppercase tracking-[0.35em] text-secondary">
               Section {String(index + 1).padStart(2, '0')}
-            </p>
+            </p> */}
             <h2 className="max-w-3xl text-3xl font-bold leading-tight text-primary md:text-4xl">{section.title}</h2>
           </div>
-          <a
+          {/* <a
             href={`#${sectionId}`}
             className="inline-flex items-center gap-2 text-sm font-semibold text-primary/70 transition-colors hover:text-primary"
           >
             <i className="bi bi-link-45deg text-base" />
             Direct Link
-          </a>
+          </a> */}
         </div>
 
         <div className="space-y-8">
@@ -189,7 +190,7 @@ function VisaSection({ section, index }: { section: VisaDetailSection; index: nu
                   </summary>
                   <div className="mt-5 flex items-start gap-4 border-t border-black/5 pt-5">
                     <span className="text-xs font-bold uppercase tracking-[0.3em] text-secondary">
-                      FAQ {String(faqIndex + 1).padStart(2, '0')}
+                      {String(faqIndex + 1).padStart(2, '0')}
                     </span>
                     <p className="leading-8 text-slate-600">{faq.answer}</p>
                   </div>
@@ -209,7 +210,7 @@ export default function InternationalVisaDetailPage({
   parentLabel = 'International Visas',
   overviewIconClassName = 'bi bi-passport-fill',
   overviewLabel = 'Guide Overview',
-  heroEyebrow = 'Core Plus Visa Assistance',
+  // heroEyebrow = 'Core Plus Visa Assistance',
   backHref = '/visa-requirements/international',
   backLabel = 'View All International Visas',
   includesText = 'Full application guidance, document sections, processing details, fee information, and FAQs.',
@@ -257,7 +258,7 @@ export default function InternationalVisaDetailPage({
 
         <div className="relative z-20">
           <div className="container mx-auto max-w-7xl px-4 py-24 md:py-28">
-            <div className="grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_380px] lg:items-end">
+            <div className="grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_380px] lg:items-start">
               <div className="max-w-3xl">
                 <div className="mb-6 flex flex-wrap items-center gap-3 text-sm text-white/85">
                   <Link href="/" className="transition-colors hover:text-white">
@@ -271,7 +272,7 @@ export default function InternationalVisaDetailPage({
                   <span className="text-white">{page.title}</span>
                 </div>
 
-                <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-white">{heroEyebrow}</p>
+                {/* <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-white">{heroEyebrow}</p> */}
                 <h1
                   className="mb-6 text-4xl font-extrabold leading-tight text-white md:text-6xl"
                   style={{ color: '#FFFFFF' }}
@@ -295,51 +296,25 @@ export default function InternationalVisaDetailPage({
                   </Link>
                 </div>
 
-                <div className="mt-10 flex flex-wrap gap-3">
-                  {sectionLinks.slice(0, 4).map((sectionLink) => (
-                    <a
-                      key={sectionLink.id}
-                      href={`#${sectionLink.id}`}
-                      className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white/90 backdrop-blur-md transition hover:bg-white/15 hover:text-white"
-                    >
-                      {sectionLink.title}
-                    </a>
-                  ))}
-                </div>
+               
               </div>
 
-              <aside className="rounded-[2rem] border border-white/15 bg-white/12 p-6 text-white shadow-[0_24px_90px_rgba(0,0,0,0.22)] backdrop-blur-xl">
-                <div className="mb-6 flex items-center gap-4 border-b border-white/10 pb-6">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15 text-2xl text-white">
-                    <i className={overviewIconClassName} />
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.3em] text-white/85">{overviewLabel}</p>
-                    <p className="mt-2 text-2xl font-bold text-white">{page.title}</p>
-                  </div>
-                </div>
+              <div className="space-y-6">
+               
 
-                <div className="space-y-4">
-                  <div className="rounded-2xl bg-white/8 p-4">
-                    <p className="text-xs font-bold uppercase tracking-[0.28em] text-white/85">Includes</p>
-                    <p className="mt-2 text-sm leading-7 text-white/92">{includesText}</p>
+                <aside className="min-h-[28rem] rounded-[2rem] border border-white/35 bg-[linear-gradient(155deg,rgba(7,24,49,0.9),rgba(15,44,89,0.82))] p-6 text-white shadow-[0_24px_90px_rgba(0,0,0,0.28)] backdrop-blur-xl">
+                  <div className="mb-6 flex items-center gap-4 border-b border-white/10 pb-6">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/20 text-2xl text-white">
+                      <i className="bi bi-chat-dots-fill" />
+                    </div>
+                    <div>
+                      <p className="mt-2 text-2xl font-bold text-white">Contact Us</p>
+                    </div>
                   </div>
-                  <div className="rounded-2xl bg-white/8 p-4">
-                    <p className="text-xs font-bold uppercase tracking-[0.28em] text-white/85">Best For</p>
-                    <p className="mt-2 text-sm leading-7 text-white/92">{bestForText}</p>
-                  </div>
-                  <div className="rounded-2xl bg-white/8 p-4">
-                    <p className="text-xs font-bold uppercase tracking-[0.28em] text-white/85">Quick Action</p>
-                    <Link
-                      href={page.heroButtonHref}
-                      className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-white"
-                    >
-                      {page.heroButtonLabel}
-                      <i className="bi bi-arrow-right" />
-                    </Link>
-                  </div>
-                </div>
-              </aside>
+
+                  <WhatsAppForm compact className="bg-white/95 p-4 shadow-[0_14px_38px_rgba(0,0,0,0.26)]" />
+                </aside>
+              </div>
             </div>
           </div>
         </div>

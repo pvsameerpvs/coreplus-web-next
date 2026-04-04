@@ -7,7 +7,7 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-8 left-8 z-40 w-[60px] h-[60px] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300"
+      className="fixed bottom-8 right-8 z-40 h-[60px] w-[60px] rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110"
       style={{
         backgroundColor: '#25d366',
         animation: 'float 3s ease-in-out infinite',

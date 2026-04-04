@@ -4,7 +4,12 @@ import { useState, useMemo } from 'react';
 import { WA_NUMBER } from '@/lib/constants';
 import { WHATSAPP_INQUIRY_OPTIONS } from '@/lib/home-content';
 
-export default function WhatsAppForm() {
+interface WhatsAppFormProps {
+  compact?: boolean;
+  className?: string;
+}
+
+export default function WhatsAppForm({ compact = false, className = '' }: WhatsAppFormProps) {
   const [form, setForm] = useState({ name: '', email: '', phone: '', subject: '', message: '' });
 
   const waHref = useMemo(() => {
@@ -25,14 +30,19 @@ export default function WhatsAppForm() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const fields: { name: 'name' | 'email' | 'phone'; label: string; type: string; span?: boolean }[] = [
-    { name: 'name', label: 'Your Name', type: 'text' },
-    { name: 'email', label: 'Your Email', type: 'email' },
-    { name: 'phone', label: 'Phone Number', type: 'tel', span: true },
-  ];
+  const fields: { name: 'name' | 'email' | 'phone'; label: string; type: string; span?: boolean }[] = compact
+    ? [
+        { name: 'name', label: 'Your Name', type: 'text' },
+        { name: 'phone', label: 'Phone Number', type: 'tel', span: true },
+      ]
+    : [
+        { name: 'name', label: 'Your Name', type: 'text' },
+        { name: 'email', label: 'Your Email', type: 'email' },
+        { name: 'phone', label: 'Phone Number', type: 'tel', span: true },
+      ];
 
   return (
-    <div className="relative overflow-hidden p-6 bg-white rounded-2xl shadow-lg">
+    <div className={`relative overflow-hidden rounded-2xl bg-white p-6 shadow-lg ${className}`}>
       {/* Decorative corner */}
       <div
         className="absolute top-0 right-0 opacity-10"
@@ -55,7 +65,7 @@ export default function WhatsAppForm() {
               placeholder={f.label}
               value={form[f.name]}
               onChange={handleChange}
-              className="w-full px-4 py-3 bg-gray-100 border-0 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+              className="w-full rounded-xl border-0 bg-gray-100 px-4 py-3 text-sm text-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-primary transition-all"
             />
           </div>
         ))}
@@ -65,7 +75,7 @@ export default function WhatsAppForm() {
             id="subject"
             value={form.subject}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-gray-100 border-0 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all text-gray-700"
+            className="w-full rounded-xl border-0 bg-gray-100 px-4 py-3 text-sm text-black focus:outline-none focus:ring-2 focus:ring-primary transition-all"
           >
             <option value="">Select enquiry type</option>
             {WHATSAPP_INQUIRY_OPTIONS.map((option) => (
@@ -82,8 +92,8 @@ export default function WhatsAppForm() {
             placeholder="Message"
             value={form.message}
             onChange={handleChange}
-            rows={4}
-            className="w-full px-4 py-3 bg-gray-100 border-0 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none"
+            rows={compact ? 3 : 4}
+            className="w-full resize-none rounded-xl border-0 bg-gray-100 px-4 py-3 text-sm text-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-primary transition-all"
           />
         </div>
         <div className="col-span-2">
@@ -94,7 +104,7 @@ export default function WhatsAppForm() {
             className="flex items-center justify-center gap-2 w-full py-4 rounded-full font-bold text-white shadow-md hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
             style={{ background: '#0F2C59' }}
           >
-            Send Message <i className="bi bi-send-fill" />
+            {compact ? 'Send on WhatsApp' : 'Send Message'} <i className="bi bi-send-fill" />
           </a>
         </div>
       </div>
