@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { GoogleTagManager } from '@next/third-parties/google';
 import './globals.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Navbar from '@/components/layout/Navbar';
@@ -37,6 +38,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  verification: {
+    google: 'C94nccqwsrLuhARF1HXWE1IErhLmKeHqJ5tw184rN-o',
+  },
   robots: {
     index: true,
     follow: true,
@@ -72,9 +76,12 @@ export const metadata: Metadata = {
   },
 };
 
+const GOOGLE_TAG_MANAGER_ID = 'GTM-PCGXQRGG';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId={GOOGLE_TAG_MANAGER_ID} />
       <body>
         <LoadingScreen />
         <AosProvider />
