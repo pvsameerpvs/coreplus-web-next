@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { GoogleTagManager } from '@next/third-parties/google';
 import './globals.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Script from 'next/script';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import LoadingScreen from '@/components/layout/LoadingScreen';
@@ -76,13 +76,27 @@ export const metadata: Metadata = {
   },
 };
 
-const GOOGLE_TAG_MANAGER_ID = 'GTM-PCGXQRGG';
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId={GOOGLE_TAG_MANAGER_ID} />
+      <head>
+        <Script id="google-tag-manager" strategy="beforeInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PCGXQRGG');`}
+        </Script>
+      </head>
       <body>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PCGXQRGG"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <LoadingScreen />
         <AosProvider />
         <Navbar />
