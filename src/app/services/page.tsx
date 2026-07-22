@@ -107,7 +107,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/images/pro image.png"
+                src="/images/services/Proffesional PRO Services in Dubai - Coreplus.webp"
                 alt="PRO Services in UAE"
                 width={600}
                 height={450}

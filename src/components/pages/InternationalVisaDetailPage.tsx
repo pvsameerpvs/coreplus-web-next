@@ -175,6 +175,22 @@ function VisaSection({ section, index }: { section: VisaDetailSection; index: nu
             </div>
           )}
 
+          {section.images && section.images.length > 0 && (
+            <div className="grid gap-4 md:grid-cols-3">
+              {section.images.map((img, imgIndex) => (
+                <div key={imgIndex} className="overflow-hidden rounded-2xl">
+                  <Image
+                    src={img}
+                    alt=""
+                    width={400}
+                    height={300}
+                    className="h-64 w-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+
           {section.faqs && (
             <div className="space-y-4">
               {section.faqs.map((faq, faqIndex) => (
@@ -228,20 +244,12 @@ export default function InternationalVisaDetailPage({
       <div style={{ marginTop: '80px' }} />
 
       <section
-        className="relative overflow-hidden bg-white"
+        className="relative overflow-hidden"
         style={{
           minHeight: '760px',
         }}
       >
-        <div
-          className="hero-bg-clip absolute top-0 left-0 z-10 h-full w-full lg:w-[68%]"
-          style={{
-            background: 'linear-gradient(135deg, #0F2C59 0%, #1a4f9c 100%)',
-            filter: 'drop-shadow(10px 0 18px rgba(0,0,0,0.24))',
-          }}
-        />
-
-        <div className="absolute inset-0 z-0 lg:left-auto lg:w-[52%]">
+        <div className="absolute inset-0 z-0">
           <Image
             src={page.heroImage}
             alt={page.heroTitle}
@@ -250,7 +258,7 @@ export default function InternationalVisaDetailPage({
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/20 lg:bg-transparent" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
 
         <div className="absolute left-[-8%] top-12 z-10 h-56 w-56 rounded-full bg-secondary/20 blur-3xl" />

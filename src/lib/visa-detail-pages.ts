@@ -36,6 +36,7 @@ export interface VisaDetailSection {
   faqs?: VisaDetailFaqItem[];
   buttonLabel?: string;
   buttonHref?: string;
+  images?: string[];
 }
 
 export interface VisaDetailPage {
@@ -65,7 +66,7 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
       'Start your UK visit visa application with trusted visa consultants in Dubai. Get expert guidance on documents, eligibility, and the application process.',
     heroButtonLabel: 'Check Visa Eligibility',
     heroButtonHref: CONTACT_HREF,
-    heroImage: '/images/visa_processing 12.jpg',
+    heroImage: '/images/UK/tower Bridge in London_ popular destination for travelers.jpeg',
     sections: [
       {
         title: 'Apply for a UK Visa from UAE with Trusted Visa Consultants',
@@ -73,6 +74,11 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
           'Planning to visit the United Kingdom from the UAE? Whether you are travelling for tourism, a business meeting, or to visit family, you will need a UK visa before entering the country. The United Kingdom has its own immigration system and is not part of the Schengen area, meaning a separate UK visa is required for UAE residents.',
           'The UK visa application process involves selecting the correct visa category, preparing supporting documents, completing the online application, and attending a biometric appointment. For many applicants, managing these requirements independently can be confusing and time-consuming.',
           'Core Plus is a Dubai-based visa consultancy that assists UAE residents with the UK visitor visa application process. Our consultants help review documents, guide you through the application process, and ensure your file is complete and properly prepared before submission.',
+        ],
+        images: [
+          '/images/UK/couple at airport starting UK trip with visa assistance from CorePlus Dubai.webp',
+          '/images/UK/famous UK and Europe landmarks representing travel with UK Standard Visitor Visa.png',
+          '/images/UK/tower Bridge in London_ popular destination for travelers.jpeg',
         ],
       },
       {
@@ -318,7 +324,7 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
       'Apply for your Schengen visa from Dubai with professional visa consultants. Complete document support and a smooth application process for UAE residents.',
     heroButtonLabel: 'Get Visa Assistance',
     heroButtonHref: CONTACT_HREF,
-    heroImage: '/images/shengon visa.jpg',
+    heroImage: '/images/Schengen/traveler showing passport and ticket at airport for Schengen visa journey from UAE.webp',
     sections: [
       {
         title: 'Apply for a Schengen Visa from Dubai with Trusted Visa Consultants',
@@ -333,6 +339,10 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
           'Complete document verification.',
           'Visa application assistance.',
           'Appointment booking guidance.',
+        ],
+        images: [
+          '/images/Schengen/couple at airport holding passports and tickets for Schengen visa travel from Dubai.webp',
+          '/images/Schengen/traveler showing passport and ticket at airport for Schengen visa journey from UAE.webp',
         ],
       },
       {
@@ -569,7 +579,7 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
       'Apply for your Japan visa from Dubai with expert visa consultants. Fast document verification and professional application assistance for UAE residents.',
     heroButtonLabel: 'Get Visa Assistance',
     heroButtonHref: CONTACT_HREF,
-    heroImage: '/images/johan-godinez-dDYRYivNzbI-unsplash.jpg',
+    heroImage: '/images/Japan/scenic view of Mount Fuji from traditional temple in Japan, ideal travel destination for travellers from Dubai.webp',
     sections: [
       {
         title: 'Trusted Japan Visa Services in Dubai for UAE Residents',
@@ -583,6 +593,11 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
           'Document verification before submission.',
           'Visa application assistance.',
           'Step-by-step guidance from visa experts.',
+        ],
+        images: [
+          '/images/Japan/scenic view of Mount Fuji from traditional temple in Japan, ideal travel destination for travellers from Dubai.webp',
+          '/images/Japan/tourists visiting Asakusa temple during cherry blossom season in Japan _ popular destination for Japan tourist visa applicants from UAE.webp',
+          '/images/Japan/traveler capturing photos at a Japanese shrine, experience Japan with a visit visa from UAE.webp',
         ],
       },
       {
@@ -741,7 +756,7 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
       'Apply for a USA visit visa from Dubai with guidance from experienced visa consultants. Core Plus helps UAE residents prepare documents, complete the DS-160 form, and navigate the US visa application process smoothly.',
     heroButtonLabel: 'Check Visa Eligibility',
     heroButtonHref: CONTACT_HREF,
-    heroImage: '/images/visa2.jpg',
+    heroImage: '/images/USA/travel suitcase with US symbols at airport for US visit visa from Dubai.webp',
     sections: [
       {
         title: 'Expert Assistance for US Visa Applications from the UAE',
@@ -749,6 +764,11 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
           'Planning to visit the United States from the UAE? Whether it is for a vacation, an important business meeting, or to spend time with family, securing the right US visa is the first step toward your journey.',
           'For many applicants, the visa process can feel complex and time-consuming. That is where Core Plus makes the difference. Our experienced visa consultants assist throughout the entire application process, from preparing the required documents to organizing appointments and ensuring everything is submitted correctly.',
           'With the right guidance and support, your US visa application becomes simpler, smoother, and stress-free.',
+        ],
+        images: [
+          '/images/USA/Passport and travel documents for US visa application prepared with corePlus visa consultancy dubai_uae.webp',
+          '/images/USA/tourists visiting Statue of Liberty in New York with US visa from Dubai.webp',
+          '/images/USA/travel suitcase with US symbols at airport for US visit visa from Dubai.webp',
         ],
       },
       {
@@ -955,12 +975,16 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
       'Apply for a Saudi tourist or multiple-entry visa from Dubai. Expert visa consultants helping UAE residents every step of the way.',
     heroButtonLabel: 'Apply Now',
     heroButtonHref: CONTACT_HREF,
-    heroImage: '/images/visa_processing.jpg',
+    heroImage: '/images/Saudi/traveler in airport with luggage preparing to travel to Saudi Arabia from UAE with.webp',
     sections: [
       {
         title: 'Saudi Visa from Dubai for UAE Residents',
         paragraphs: [
           'Planning a trip to Saudi Arabia? Core Plus helps UAE residents apply for a Saudi visa from Dubai through the convenient e-visa system. Our team provides professional guidance with the application process, document checks, and submission support so your visa application is completed accurately and efficiently.',
+        ],
+        images: [
+          '/images/Saudi/riyadh city skyline view in Saudi Arabia _popular destination for UAE travelers.webp',
+          '/images/Saudi/traveler in airport with luggage preparing to travel to Saudi Arabia from UAE with.webp',
         ],
       },
       {

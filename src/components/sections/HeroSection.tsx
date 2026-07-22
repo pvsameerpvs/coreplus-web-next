@@ -3,33 +3,23 @@ import Link from 'next/link';
 export default function HeroSection() {
   return (
     <section
-      className="relative flex items-center overflow-hidden bg-white"
+      className="relative flex items-center overflow-hidden"
       style={{
         height: '100vh',
         minHeight: '750px',
         paddingTop: '80px',
       }}
     >
-      {/* Angled blue background left */}
+      {/* Full background image */}
       <div
-        className="hero-bg-clip absolute top-0 left-0 h-full z-10"
+        className="absolute inset-0 z-0"
         style={{
-          width: '65%',
-          background: 'linear-gradient(135deg, #0F2C59 0%, #1a4f9c 100%)',
-          filter: 'drop-shadow(10px 0 15px rgba(0,0,0,0.3))',
-        }}
-      />
-
-      {/* Right background image */}
-      <div
-        className="absolute top-0 right-0 h-full z-0"
-        style={{
-          width: '50%',
           backgroundImage: "url('/images/Home page/businessmen-making-handshake-with-partner-greeting-dealing-website-banner-copy-space (1).jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       />
+      <div className="absolute inset-0 z-[1] bg-black/40" />
 
       {/* Content */}
       <div className="relative z-20 w-full max-w-[1200px] mx-auto px-4">
