@@ -4,9 +4,9 @@ import { GOOGLE_BUSINESS_PROFILE_URL } from '@/lib/home-content';
 import { buildMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'About Us - CorePlus',
+  title: 'About CorePlus | Visa Consultancy & Business Setup Services Dubai',
   description:
-    'Learn more about Core Plus Business Set Up Services LLC, our mission, values, company snapshot, and business support services in Dubai.',
+    'Learn about CorePlus, a Dubai-based consultancy specializing in visa assistance, business setup, and PRO services for UAE residents and companies.',
   path: '/about',
   image: '/images/img 33.png',
 });
@@ -203,13 +203,13 @@ export default function AboutPage() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-primary">About Us</h2>
               <p className="text-base leading-relaxed text-gray-700">
-                <strong>Core Plus Business Set Up Services LLC</strong> has earned a reputation as a trusted partner for businesses of all sizes, from startups to established enterprises.
+                With years of industry experience in handling international visa applications, CorePlus operates as a Dubai-based consultancy focused on visa assistance services for UAE residents and expatriates. Our team brings practical expertise in managing visa processes, documentation standards, and application procedures across multiple destinations, ensuring each application is prepared with accuracy and in line with current requirements.
               </p>
               <p className="text-base leading-relaxed text-gray-700 mt-4">
-                Our experienced team is committed to simplifying the complexities of company formation and business operations in the UAE. We take pride in delivering personalized, end-to-end solutions that ensure full compliance with local regulations while optimizing business processes for greater efficiency and growth.
+                Our experience in working closely with visa processes, submission systems, and regulatory procedures allows us to guide clients efficiently through each stage — from eligibility assessment and document verification to application preparation and appointment coordination.
               </p>
               <p className="text-base leading-relaxed text-gray-700 mt-4">
-                By leveraging deep market insights and strategic expertise, <strong>Core Plus</strong> continues to empower clients to achieve their business goals in the competitive UAE landscape.
+                Alongside our core focus on visa consultancy, CorePlus also provides business setup assistance and PRO services, supporting individuals and companies in navigating UAE administrative processes, licensing requirements, and government-related documentation with clarity and compliance.
               </p>
             </div>
             <div>
@@ -375,6 +375,212 @@ export default function AboutPage() {
                 className="h-full w-full object-cover"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* OUR VISA ASSISTANCE EXPERTISE */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-4xl font-bold mb-6 text-primary">Our Visa Assistance Expertise</h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              Visa applications require precision, documentation accuracy, and a clear understanding of embassy-specific
+              requirements. At CorePlus, we provide structured support for{' '}
+              <a
+                href="https://coreplusdxb.ae/visa-requirements/international/"
+                className="text-primary font-semibold underline hover:no-underline"
+              >
+                international visit visa
+              </a>{' '}
+              applications from the UAE.
+            </p>
+
+            <div className="mt-10 grid gap-4 sm:grid-cols-2">
+              {[
+                'Eligibility assessment based on travel purpose and profile',
+                'Document verification aligned with embassy requirements',
+                'Guidance for visa application forms (DS-160 and embassy portals)',
+                'Appointment scheduling and submission support',
+                'Travel documentation guidance',
+                'Interview preparation support (where applicable)',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3 rounded-xl border border-black/5 bg-gray-50 p-4">
+                  <i className="bi bi-check-circle-fill text-primary mt-0.5" />
+                  <span className="text-sm leading-relaxed text-gray-700">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10">
+              <h3 className="text-xl font-bold text-primary mb-4">
+                We assist UAE residents applying for visas to key destinations such as:
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {['United Kingdom', 'Schengen countries (Europe)', 'United States', 'Japan', 'Saudi Arabia'].map(
+                  (item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary"
+                    >
+                      {item}
+                    </span>
+                  ),
+                )}
+              </div>
+              <p className="mt-6 text-sm leading-relaxed text-gray-500">
+                Each application is handled with a focus on accuracy, completeness, and compliance with current visa
+                regulations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BUSINESS SETUP & CORPORATE SERVICES */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-4xl font-bold mb-6 text-primary">Business Setup &amp; Corporate Services</h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              In addition to visa consultancy, CorePlus provides reliable{' '}
+              <a
+                href="https://coreplusdxb.ae/services/"
+                className="text-primary font-semibold underline hover:no-underline"
+              >
+                business setup and corporate services
+              </a>{' '}
+              for individuals and companies planning to establish operations in the UAE.
+            </p>
+
+            <div className="mt-10 grid gap-4 sm:grid-cols-2">
+              {[
+                'Company formation (Mainland, Free Zone, Offshore)',
+                'Trade license processing and renewals',
+                'PRO services and government approvals',
+                'Document clearing and attestation support',
+                'Corporate visa and employee visa assistance',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3 rounded-xl border border-black/5 bg-white p-4">
+                  <i className="bi bi-briefcase-fill text-primary mt-0.5" />
+                  <span className="text-sm leading-relaxed text-gray-700">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-6 text-sm leading-relaxed text-gray-500">
+              We support entrepreneurs, startups, and established businesses by simplifying regulatory procedures and
+              ensuring smooth coordination with relevant authorities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* OUR APPROACH */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-4xl font-bold mb-6 text-primary">Our Approach</h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              Every application and business requirement is unique. At CorePlus, we follow a structured and
+              process-driven approach to ensure clarity and efficiency.
+            </p>
+
+            <div className="mt-10 grid gap-6 sm:grid-cols-2">
+              {[
+                {
+                  step: '1',
+                  title: 'Consultation & Assessment',
+                  text: 'Understanding your travel or business requirements and identifying the right process.',
+                },
+                {
+                  step: '2',
+                  title: 'Documentation & Preparation',
+                  text: 'Reviewing and preparing all required documents to meet current standards.',
+                },
+                {
+                  step: '3',
+                  title: 'Application Support',
+                  text: 'Guiding you through submission, appointments, and procedural steps.',
+                },
+                {
+                  step: '4',
+                  title: 'Coordination & Follow-Up',
+                  text: 'Providing continuous support until completion of the process.',
+                },
+              ].map((item) => (
+                <div
+                  key={item.step}
+                  className="flex gap-4 rounded-[1.75rem] border border-black/5 bg-gray-50 p-6"
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
+                    {item.step}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-primary">{item.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-gray-500">{item.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-6 text-sm leading-relaxed text-gray-500">
+              This approach helps reduce errors, avoid delays, and improve overall efficiency.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY WORK WITH COREPLUS */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-4xl font-bold mb-6 text-primary">Why Work With CorePlus</h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              Choosing the right consultancy plays an important role in both visa applications and business setup
+              processes. CorePlus offers:
+            </p>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {[
+                'Experience in handling international visa applications',
+                'Strong understanding of documentation and compliance requirements',
+                'Structured and transparent consultation process',
+                'Personalized guidance based on individual profiles',
+                'Support across complete business related service requirements',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3 rounded-xl border border-black/5 bg-white p-4">
+                  <i className="bi bi-check-lg text-primary mt-0.5 text-lg" />
+                  <span className="text-sm leading-relaxed text-gray-700">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-6 text-sm leading-relaxed text-gray-500">
+              Our focus is on providing clear guidance and reliable support at every stage.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* START YOUR JOURNEY */}
+      <section className="py-16 bg-primary">
+        <div className="container mx-auto px-4 text-center">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-4xl font-bold text-white">Start Your Journey with Us</h2>
+            <p className="mt-4 text-base leading-relaxed text-white/80">
+              Whether you are planning international travel or establishing a business in the UAE, CorePlus provides
+              the guidance and support required to navigate the process efficiently.
+            </p>
+            <p className="mt-2 text-base leading-relaxed text-white/80">
+              Connect with our consultants today to get started.
+            </p>
+            <a
+              href="/contact"
+              className="mt-8 inline-block rounded-full bg-white px-8 py-3 text-sm font-bold uppercase tracking-wider text-primary shadow-lg transition-all hover:bg-white/90"
+            >
+              Get a Free Consultation
+            </a>
           </div>
         </div>
       </section>

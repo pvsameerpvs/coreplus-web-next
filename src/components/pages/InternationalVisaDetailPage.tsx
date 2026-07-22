@@ -177,17 +177,21 @@ function VisaSection({ section, index }: { section: VisaDetailSection; index: nu
 
           {section.images && section.images.length > 0 && (
             <div className="grid gap-4 md:grid-cols-3">
-              {section.images.map((img, imgIndex) => (
-                <div key={imgIndex} className="overflow-hidden rounded-2xl">
-                  <Image
-                    src={img}
-                    alt=""
-                    width={400}
-                    height={300}
-                    className="h-64 w-full object-cover"
-                  />
-                </div>
-              ))}
+              {section.images.map((img, imgIndex) => {
+                const imgSrc = typeof img === 'string' ? img : img.src;
+                const imgAlt = typeof img === 'string' ? '' : img.alt;
+                return (
+                  <div key={imgIndex} className="overflow-hidden rounded-2xl">
+                    <Image
+                      src={imgSrc}
+                      alt={imgAlt}
+                      width={400}
+                      height={300}
+                      className="h-64 w-full object-cover"
+                    />
+                  </div>
+                );
+              })}
             </div>
           )}
 

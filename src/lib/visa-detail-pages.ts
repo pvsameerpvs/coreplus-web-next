@@ -36,7 +36,7 @@ export interface VisaDetailSection {
   faqs?: VisaDetailFaqItem[];
   buttonLabel?: string;
   buttonHref?: string;
-  images?: string[];
+  images?: (string | { src: string; alt: string })[];
 }
 
 export interface VisaDetailPage {
@@ -77,8 +77,14 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
         ],
         images: [
           '/images/UK/couple at airport starting UK trip with visa assistance from CorePlus Dubai.webp',
-          '/images/UK/famous UK and Europe landmarks representing travel with UK Standard Visitor Visa.png',
-          '/images/UK/tower Bridge in London_ popular destination for travelers.jpeg',
+          {
+            src: '/images/UK/famous UK and Europe landmarks representing travel with UK Standard Visitor Visa.png',
+            alt: 'famous UK and Europe landmarks representing travel with UK Standard Visitor Visa',
+          },
+          {
+            src: '/images/UK/tower Bridge in London_ popular destination for travelers.jpeg',
+            alt: 'tower Bridge in London_ popular destination for travelers',
+          },
         ],
       },
       {
@@ -341,8 +347,14 @@ export const VISA_DETAIL_PAGES: Record<string, VisaDetailPage> = {
           'Appointment booking guidance.',
         ],
         images: [
-          '/images/Schengen/couple at airport holding passports and tickets for Schengen visa travel from Dubai.webp',
-          '/images/Schengen/traveler showing passport and ticket at airport for Schengen visa journey from UAE.webp',
+          {
+            src: '/images/Schengen/couple at airport holding passports and tickets for Schengen visa travel from Dubai.webp',
+            alt: 'couple at airport holding passports and tickets for Schengen visa travel from Dubai',
+          },
+          {
+            src: '/images/Schengen/traveler showing passport and ticket at airport for Schengen visa journey from UAE.webp',
+            alt: 'traveler showing passport and ticket at airport for Schengen visa journey from UAE',
+          },
         ],
       },
       {
