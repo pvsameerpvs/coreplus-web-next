@@ -214,8 +214,8 @@ export default function AboutPage() {
             </div>
             <div>
               <Image
-                src="/images/company-formation.jpg"
-                alt="CorePlus Team"
+                src="/images/About us/coreplus- Trusted Visa Consultancy in Dubai.webp"
+                alt="Trusted Visa Consultancy in Dubai - CorePlus"
                 width={600}
                 height={450}
                 className="rounded-2xl w-full h-auto"

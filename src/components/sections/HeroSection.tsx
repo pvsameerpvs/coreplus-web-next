@@ -25,7 +25,7 @@ export default function HeroSection() {
         className="absolute top-0 right-0 h-full z-0"
         style={{
           width: '50%',
-          backgroundImage: "url('/images/hero-section.jpg')",
+          backgroundImage: "url('/images/Home page/businessmen-making-handshake-with-partner-greeting-dealing-website-banner-copy-space (1).jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

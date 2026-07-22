@@ -10,8 +10,8 @@ export default function HomeAboutSection() {
           <div data-aos="fade-right">
             <div className="relative pb-5 pr-5">
               <Image
-                src="/images/img 33.png"
-                alt="About CorePlus"
+                src="/images/About us/coreplus- Trusted Visa Consultancy in Dubai.webp"
+                alt="Trusted Visa Consultancy in Dubai - CorePlus"
                 width={600}
                 height={450}
                 className="h-auto w-full rounded-2xl shadow-xl"
